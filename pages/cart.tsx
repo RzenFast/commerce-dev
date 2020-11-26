@@ -41,7 +41,6 @@ export default function Cart() {
   const success = null
 
   return (
-    <script src="https://js.dev.slow.dev/fast-bigcommerce.js"></script>
     <div className="grid lg:grid-cols-12">
       <div className="lg:col-span-8">
         {isEmpty ? (
