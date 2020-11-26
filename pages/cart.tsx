@@ -42,12 +42,10 @@ export default function Cart() {
   const success = null
 
   return (
-    <div>
+    <div className="grid lg:grid-cols-12">
       <Head>
         <script type="text/javascript" src="https://js.dev.slow.dev/fast-bigcommerce.js" />
       </Head>
-    </div>
-    <div className="grid lg:grid-cols-12">
       <div className="lg:col-span-8">
         {isEmpty ? (
           <div className="flex-1 px-12 py-24 flex flex-col justify-center items-center ">
