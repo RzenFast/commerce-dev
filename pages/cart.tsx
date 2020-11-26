@@ -8,6 +8,7 @@ import { Button } from '@components/ui'
 import { Bag, Cross, Check } from '@components/icons'
 import { CartItem } from '@components/cart'
 import { Text } from '@components/ui'
+import Head from 'next/head'
 
 export async function getStaticProps({
   preview,
@@ -41,6 +42,9 @@ export default function Cart() {
   const success = null
 
   return (
+    <Head>
+      <script type="text/javascript" src="https://js.dev.slow.dev/fast-bigcommerce.js"></script>
+    </Head>
     <div className="grid lg:grid-cols-12">
       <div className="lg:col-span-8">
         {isEmpty ? (
