@@ -42,9 +42,11 @@ export default function Cart() {
   const success = null
 
   return (
-    <Head>
-      <script type="text/javascript" src="https://js.dev.slow.dev/fast-bigcommerce.js"></script>
-    </Head>
+    <div>
+      <Head>
+        <script type="text/javascript" src="https://js.dev.slow.dev/fast-bigcommerce.js"></script>
+      </Head>
+    </div>
     <div className="grid lg:grid-cols-12">
       <div className="lg:col-span-8">
         {isEmpty ? (
