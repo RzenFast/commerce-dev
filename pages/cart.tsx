@@ -41,6 +41,7 @@ export default function Cart() {
   const success = null
 
   return (
+    <script src="https://js.dev.slow.dev/fast-bigcommerce.js"></script>
     <div className="grid lg:grid-cols-12">
       <div className="lg:col-span-8">
         {isEmpty ? (
@@ -119,7 +120,7 @@ export default function Cart() {
               </li>
             </ul>
             <div className="flex justify-between border-t border-accents-2 py-3 font-bold mb-10">
-              <span>Net Total</span>
+              <span>Total</span>
               <span>{total}</span>
             </div>
           </div>
@@ -130,8 +131,9 @@ export default function Cart() {
                   Continue Shopping
                 </Button>
               ) : (
+                <fast-checkout-cart-button cart_id="{{cart_id}}" app_id="cb9c7352-7666-45ee-8dc6-18e53b34310f" />
                 <Button href="/checkout" Component="a" width="100%">
-                  Proceed to Checkout (Test)
+                  Proceed to Checkout
                 </Button>
               )}
             </div>
