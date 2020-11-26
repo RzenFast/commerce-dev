@@ -44,7 +44,7 @@ export default function Cart() {
   return (
     <div className="grid lg:grid-cols-12">
       <Head>
-        <script type="text/javascript" src="https://js.dev.slow.dev/fast-bigcommerce.js" />
+        <script type="text/javascript" src="https://js.dev.slow.dev/fast.js" />
       </Head>
       <div className="lg:col-span-8">
         {isEmpty ? (
