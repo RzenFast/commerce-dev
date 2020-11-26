@@ -119,7 +119,7 @@ export default function Cart() {
               </li>
             </ul>
             <div className="flex justify-between border-t border-accents-2 py-3 font-bold mb-10">
-              <span>Total</span>
+              <span>Net Total</span>
               <span>{total}</span>
             </div>
           </div>
