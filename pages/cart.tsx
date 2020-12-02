@@ -134,7 +134,6 @@ export default function Cart() {
                   Continue Shopping
                 </Button>
               ) : (
-                <fast-checkout-button app_id="cb9c7352-7666-45ee-8dc6-18e53b34310f" />
                 <Button href="/checkout" Component="a" width="100%">
                   Proceed to Checkout
                 </Button>
